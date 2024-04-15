@@ -1,6 +1,6 @@
 exports.getData = (req, res) => {
     const data = {
-        message: 'You clicked on button 2',
+        message: '22222222',
         timestamp: new Date().toISOString()
     };
     res.json(data);
@@ -9,5 +9,5 @@ exports.getData = (req, res) => {
 exports.postData = (req, res) => {
     const receivedData = req.body;
     // Do something with the received data
-    res.json({ message: 'You clicked on button 2', data: receivedData });
+    res.json({ message: 'You clicked 2', data: receivedData });
 };
