@@ -31,6 +31,7 @@ export default function ApiForm() {
     event.preventDefault();
     callApi("POST", "bookRequest/checkout", {MemberID : MemberID1, BookID: BookID1}).then((res) => {
       alert(`${res.message}`)
+      fetchBooks();
     }).catch(error => {
       console.log(error);
     })
@@ -40,6 +41,7 @@ export default function ApiForm() {
     event.preventDefault();
     callApi("POST","bookRequest/return", {MemberID : MemberID2, BookID: BookID2} ).then((res) => {
       alert(`${res.message}`)
+      fetchBooks();
     }).catch(error => {
       console.log(error);
     })
