@@ -1,0 +1,35 @@
+/* App.css */
+
+/* Apply styles to the container to center its children */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(53, 126, 221); */
+}
+
+/* Style the button */
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin: 4px;
+}
+
+/* Change button color on hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Change button color on active (when clicked) */
+button:active {
+  background-color: #003d80;
+}
